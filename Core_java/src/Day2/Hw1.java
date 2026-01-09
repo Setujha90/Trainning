@@ -63,10 +63,13 @@ public class Hw1 {
 		System.out.println("setu"+'a');
 		int e=3;
 		System.out.println(e *=2);
+		System.out.println(e +=1);
 		System.out.println(3>5);
 		System.out.println(5!=1);
 		System.out.println(3<4 && 4<5);
 		System.out.println(3>4 || 3>5);
+		
+		
 		
 
 	}
