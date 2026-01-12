@@ -7,6 +7,8 @@ public class HWDay3 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("Hello");
+		
 		//increament decreament
 		int a =5;
 		int b =10;
@@ -120,7 +122,21 @@ public class HWDay3 {
             System.out.println("Not a palindrome number");
         }
         
+        server();
+        cooking();
         
+        System.out.println("Main");
+        
+        sc.close();
+        
+	}
+	
+	public static void server() {
+		System.out.println("serving");
+	}
+	
+	public static void cooking() {
+		System.out.println("cooking");
 	}
 
 }
