@@ -8,7 +8,7 @@ public class BinaryDecimal {
 	        String binary = "";
 	        while (num > 0) {
 	            binary = (num % 2) + binary;
-	            num /= 2;
+	            num = num/ 2;
 	        }
 	        return binary;
 	    }
@@ -21,8 +21,8 @@ public class BinaryDecimal {
 	        while (num > 0) {
 	            int lastDigit = num % 10;
 	            decimal += lastDigit * base;
-	            base *= 2;
-	            num /= 10;
+	            base =base*2;
+	            num =num/10;
 	        }
 	        return decimal;
 	    }
@@ -34,7 +34,7 @@ public class BinaryDecimal {
 	        String octal = "";
 	        while (num > 0) {
 	            octal = (num % 8) + octal;
-	            num /= 8;
+	            num =num/8;
 	        }
 	        return octal;
 	    }
@@ -43,16 +43,16 @@ public class BinaryDecimal {
 	    public static String decimalToHexadecimal(int num) {
 	        if (num == 0) return "0";
 
-	        char[] hexMap = {'0','1','2','3','4','5','6','7','8','9',
+	        char[] set = {'0','1','2','3','4','5','6','7','8','9',
 	                         'A','B','C','D','E','F'};
 
-	        String hex = "";
+	        String s = "";
 	        while (num > 0) {
 	            int rem = num % 16;
-	            hex = hexMap[rem] + hex;
-	            num /= 16;
+	            s = set[rem] + s;
+	            num =num/ 16;
 	        }
-	        return hex;
+	        return s;
 	    }
 
 	
@@ -61,7 +61,7 @@ public class BinaryDecimal {
 	        while (num > 0) {
 	            if (num % 2 == 1)
 	                count++;
-	            num /= 2;
+	            num =num/2;
 	        }
 	        return count;
 	    }
@@ -72,11 +72,11 @@ public class BinaryDecimal {
 	    int decimal = 25;
         int binary = 11001;
 
-        System.out.println("Decimal to Binary: " + decimalToBinary(decimal));
-        System.out.println("Binary to Decimal: " + binaryToDecimal(binary));
-        System.out.println("Decimal to Octal: " + decimalToOctal(decimal));
-        System.out.println("Decimal to Hexadecimal: " + decimalToHexadecimal(decimal));
-        System.out.println("Number of 1-bits: " + countOneBits(decimal));
+        System.out.println("Decimal to Binary " + decimalToBinary(decimal));
+        System.out.println("Binary to Decimal " + binaryToDecimal(binary));
+        System.out.println("Decimal to Octal " + decimalToOctal(decimal));
+        System.out.println("Decimal to Hexadecimal " + decimalToHexadecimal(decimal));
+        System.out.println("Number of 1bits " + countOneBits(decimal));
 
 	}
 
