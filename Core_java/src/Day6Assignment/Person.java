@@ -1,5 +1,6 @@
 package Day6Assignment;
 
+//Example of multi-level inhirentence
 public class Person {
 	
 	   String name;

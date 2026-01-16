@@ -1,5 +1,6 @@
 package Day6Assignment;
 
+//Example of Encapsulation
 public class TestStudent {
     public static void main(String[] args) {
 

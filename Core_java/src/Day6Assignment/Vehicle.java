@@ -1,5 +1,6 @@
 package Day6Assignment;
 
+//Example of hirachacy
 public class Vehicle {
 	
 	String color;
