@@ -1,4 +1,4 @@
-package Student_Management_System;
+package Day7_Student_Management_System;
 
 public class Student extends Person{
 	int rollNumber;

@@ -1,4 +1,4 @@
-package has_a;
+package Day7_has_a;
 
 public class CollegeDriver {
 
