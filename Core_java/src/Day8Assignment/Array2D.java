@@ -4,6 +4,26 @@ import java.util.Scanner;
 
 public class Array2D {
 	
+	public static int [][] take2DMat(){
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter number of row");
+		int row = sc.nextInt();
+		System.out.println("Enter number of column");
+		int col = sc.nextInt();
+		
+		int [][] arr = new int[row][col];
+		
+		System.out.println("Enter your element");
+		for(int i =0;i<row;i++) {
+			for(int j =0;j<col;j++) {
+				arr[i][j]=sc.nextInt();
+			}
+			System.out.println();
+		}
+		return arr;
+	}
+	
 	public static void findLarSmall(int [][] arr) {
 		int maxi = Integer.MIN_VALUE;
 		int mini = Integer.MAX_VALUE;
@@ -39,6 +59,10 @@ public class Array2D {
 			}
 			System.out.println();
 		}
+		
+		int [][] arr2 = take2DMat();
+		
+		
 		
 		findLarSmall(arr);
 
