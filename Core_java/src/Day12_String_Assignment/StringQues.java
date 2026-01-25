@@ -58,7 +58,7 @@ public class StringQues {
 	    }
 
 	  
-	  public static void comstr() {
+	  public static void compressstr() {
 			String s = "gaaacdeef";
 			if(s.length()==0) {
 				System.out.println("not possible");
@@ -118,7 +118,7 @@ public class StringQues {
 //		System.out.println(b);
 //		boolean bt = isBalanced("{({}[])}[");
 //		System.out.println(bt);
-//		comstr();
+//		compressstr();
 		maxvol();
 
 	}
