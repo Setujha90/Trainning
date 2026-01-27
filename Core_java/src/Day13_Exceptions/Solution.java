@@ -13,7 +13,7 @@ class InvalidSalaryException extends Exception {
      super(message);
  }
 }
-
+    
 
 interface Payroll {
  double calculateSalary();
@@ -32,11 +32,43 @@ abstract class Employee implements Payroll {
      this.role = role;
  }
 
- protected void validateSalary(double salary) throws InvalidSalaryException {
-     if (salary <= 0) {
-         throw new InvalidSalaryException("Salary must be greater than zero");
-     }
+
+
+ public int getEmployeeId() {
+	return employeeId;
+}
+
+
+
+ public void setEmployeeId(int employeeId) {
+	this.employeeId = employeeId;
  }
+
+
+
+ public String getName() {
+	return name;
+ }
+
+
+
+ public void setName(String name) {
+	this.name = name;
+ }
+
+
+
+ public String getRole() {
+	return role;
+ }
+
+
+
+ public void setRole(String role) {
+	this.role = role;
+ }
+
+
 
  public void setSalary(String requesterRole, double salary)
          throws InvalidSalaryException {
@@ -87,8 +119,7 @@ class ContractEmployee extends Employee {
      return hoursWorked * Rate;
  }
 
- 
- 
+
 }
 
 
