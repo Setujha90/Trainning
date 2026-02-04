@@ -139,21 +139,21 @@ public class Program {
 		
 		//toLowCase();
 		
-//		StringBuffer s1 = new StringBuffer("xyz");
-//		StringBuffer s2 = new StringBuffer("xyz");
-//		
-//		System.out.println(s1.toString());
-//		System.out.println(s1.equals(s2));
+		StringBuffer s1 = new StringBuffer("xyz");
+		StringBuffer s2 = new StringBuffer("xyz");
+		
+		System.out.println(s1.toString());
+		System.out.println(s1.equals(s2));
 //	
 //		String s = new String(s1); //converting SB->String
 //		
 //		StringBuffer s3 = new StringBuffer(s); //converting String->SB
 //		
-//		StringBuilder s4 =new StringBuilder("abc");
-//		System.out.println(s4);
-//		
-//		StringBuffer s5 = new StringBuffer(); //16 is default capacity to store the number of character
-//		System.out.println(s5.capacity());
+		StringBuilder s4 =new StringBuilder("abc");
+		System.out.println(s4);
+		
+		StringBuffer s5 = new StringBuffer("srgfgyhjhjhkjhgghgfffgffghhfhgdrrr"); //16 is default capacity to store the number of character
+		System.out.println(s5.capacity());
 //		
 //		s4.insert(1,"setu");
 //		System.out.println(s4);
@@ -197,7 +197,7 @@ public class Program {
 //		System.out.println(Arrays.toString(c)); //converting each character of array to string????????
 		
 		//swapfirstlast();
-		removeSpace();
+	//	removeSpace();
 
 	}
 

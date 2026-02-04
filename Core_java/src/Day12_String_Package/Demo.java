@@ -36,6 +36,7 @@ public class Demo {
 		
 		//Methods of String Class;
 		String s ="abc";
+		System.out.println(s.toString());
 		s=s.toUpperCase();
 		System.out.println(s);
 		System.out.println(s.charAt(2));

@@ -306,7 +306,7 @@ public class Array {
 		int [] a = {1,4,5};
 		int [] b = {2,3,8,78,12};
 		int [] res = mergetwoarray(a,b);
-		takeIntArray(res);
+//		takeIntArray(res);
 //		
 //		int [] ans = mergetwosortedarray(a,b);
 //		takeIntArray(ans);
@@ -315,6 +315,11 @@ public class Array {
 //     int [] a = {10,10,3,2,4,4,10};
 //     
 //		eachelefreq(a);
+		
+		int [] z = new int[4];
+		Object o = new int[5];
+		System.out.println(o.toString());
+		System.out.println(z.getClass());
 		
  
 	}
